@@ -3,7 +3,7 @@ Grupo:3CV2 <br>
 Alumnos:<br>
 Alvarez Cariño Jonathan Xavier <br>
 Ramirez Rodriguez Andres<br>
-Enlaces:
+Enlaces:<br>
 BillWagner. (2022). ¿Qué es el control de versiones? - Azure DevOps. Retrieved from https://learn.microsoft.com/es-es/devops/develop/git/what-is-version-control
 
 Git vs GitHub. (2026). Retrieved from https://cei.es/git-vs-github/

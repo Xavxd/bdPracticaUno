@@ -12,7 +12,7 @@ recuperar una versión anterior cuando sea necesario.
 Sin control de versiones, los equipos pueden perder trabajo, sobrescribir los
 cambios de otras personas o crear archivos como `proyecto-final`,
 `proyecto-final-2` y `proyecto-final-definitivo`. El control de versiones
-resuelve estos problemas porque:
+res   uelve estos problemas porque:
 
 - conserva un historial confiable de los cambios;
 - permite que varias personas trabajen en el mismo proyecto;

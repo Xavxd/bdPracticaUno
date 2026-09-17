@@ -1,0 +1,66 @@
+services:
+  # Servicio MySQL
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db_operaciones
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bd_operaciones
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3307:3306"
+    volumes:
+      # Monta el script de inicialización
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      # Volumen para persistencia de datos (comentado para forzar recreación)
+      # - ./mysql_data:/var/lib/mysql
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app-network
+
+  # Servicio PHP con Apache
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php_apache_app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./index.php:/var/www/html/index.php
+      # Descomentar solo si .htaccess funciona correctamente:
+      # - ./.htaccess:/var/www/html/.htaccess
+    depends_on:
+      mysql:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - app-network
+
+  # Servicio phpMyAdmin
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin_panel
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: root
+      PMA_PASSWORD: root
+    ports:
+      - "8081:80"
+    depends_on:
+      - mysql
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

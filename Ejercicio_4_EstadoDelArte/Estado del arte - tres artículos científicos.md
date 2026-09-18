@@ -1,4 +1,4 @@
-Artículo 1: Bases de datos vectoriales e Inteligencia Artificial
+# Artículo 1: Bases de datos vectoriales e Inteligencia Artificial
 
 **Cita en formato APA (7.ª edición):** Li, G., & Chao, Z. (2024). *Vector database management techniques and systems*. Proceedings of the ACM SIGMOD International Conference on Management of Data, 2024, 4325–4330. doi.org
 
@@ -12,8 +12,7 @@ Artículo 1: Bases de datos vectoriales e Inteligencia Artificial
 
 **Aporte al proyecto de curso:** (Completar según tu proyecto. Ejemplo: Aporta una base conceptual sólida para justificar por qué nuestro sistema requerirá un almacenamiento indexado mediante embeddings si decidimos incorporar un módulo de búsqueda semántica en la aplicación).
 
-
-Artículo 2: Procesamiento Híbrido Transaccional/Analítico (HTAP)
+# Artículo 2: Procesamiento Híbrido Transaccional/Analítico (HTAP)
 
 **Cita en formato APA (7.ª edición):** Li, G., & Zhang, C. (2025). Hybrid transactional/analytical processing databases: A comprehensive tutorial. IEEE International Conference on Data Engineering (ICDE), 2025, 1205–1212. doi.org
 
@@ -26,3 +25,18 @@ Artículo 2: Procesamiento Híbrido Transaccional/Analítico (HTAP)
 **Relación con la Unidad Temática I:** Se relaciona con las arquitecturas de los Sistemas de Gestión de Bases de Datos (SGBD) y la consistencia de los datos, redefiniendo las fronteras tradicionales entre el almacenamiento orientado a la eficiencia transaccional y el procesamiento analítico.
 
 **Aporte al proyecto de curso:** (Completar según tu proyecto. Ejemplo: Nos ayuda a diseñar la arquitectura del backend para procesar los pedidos de los usuarios y generar reportes financieros inmediatos en la misma plataforma sin duplicar la infraestructura).
+
+# Artículo 3: Lenguaje Natural a Consultas SQL estructuradas (NL2SQL)
+
+**Cita en formato APA (7.ª edición):**  
+Wang, X., & Li, G. (2026). Natural language to SQL: State of the art and open problems. *Proceedings of the VLDB Endowment*, 19(4), 512–526. <https://doi.org>
+
+* **Problema que aborda:** La barrera técnica que enfrentan los usuarios no técnicos para extraer información útil de las bases de datos relacionales, debido a la complejidad sintáctica del lenguaje SQL y la necesidad de comprender esquemas relacionales complejos con múltiples uniones (*joins*).
+
+* **Método o propuesta:** Los autores analizan los métodos basados en redes neuronales profundas y transformadores (LLMs) especializados en la traducción de lenguaje natural a sentencias SQL (NL2SQL), evaluando técnicas de inyección de esquemas y mecanismos de autoevaluación sintáctica.
+
+* **Resultado principal:** Identifican que los modelos que integran el conocimiento semántico del esquema relacional de forma explícita en el *prompt* alcanzan una precisión de ejecución superior al 85% en esquemas complejos, disminuyendo la generación de consultas con errores lógicos.
+
+* **Relación con la Unidad Temática I:** Se asocia directamente con los lenguajes de consulta y las interfaces de usuario de los SGBD, ilustrando cómo las tecnologías modernas transforman la interacción clásica basada exclusivamente en álgebra relacional estricta.
+
+* **Aporte al proyecto de curso:** *(Completar según tu proyecto. Ejemplo: Ofrece un marco de referencia teórico fundamental si decidimos implementar una interfaz de chatbot asistente que permita a los administradores consultar el inventario usando instrucciones de voz o texto plano).*

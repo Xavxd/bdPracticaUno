@@ -11,7 +11,7 @@ Artículo 1: Bases de datos vectoriales e Inteligencia Artificial
 **Relación con la Unidad Temática I:** Se vincula directamente con la evolución de los modelos de datos, extendiendo el paradigma clásico hacia estructuras complejas de tipo vectorial diseñadas para datos no estructurados en entornos analíticos modernos.
 
 **Aporte al proyecto de curso:** (Completar según tu proyecto. Ejemplo: Aporta una base conceptual sólida para justificar por qué nuestro sistema requerirá un almacenamiento indexado mediante embeddings si decidimos incorporar un módulo de búsqueda semántica en la aplicación).
-```
+
 
 Artículo 2: Procesamiento Híbrido Transaccional/Analítico (HTAP)
 

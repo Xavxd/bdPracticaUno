@@ -13,7 +13,7 @@ Artículo 1: Bases de datos vectoriales e Inteligencia Artificial
 **Aporte al proyecto de curso:** (Completar según tu proyecto. Ejemplo: Aporta una base conceptual sólida para justificar por qué nuestro sistema requerirá un almacenamiento indexado mediante embeddings si decidimos incorporar un módulo de búsqueda semántica en la aplicación).
 ```
 
-### Artículo 2: Procesamiento Híbrido Transaccional/Analítico (HTAP)
+Artículo 2: Procesamiento Híbrido Transaccional/Analítico (HTAP)
 
 **Cita en formato APA (7.ª edición):** Li, G., & Zhang, C. (2025). Hybrid transactional/analytical processing databases: A comprehensive tutorial. IEEE International Conference on Data Engineering (ICDE), 2025, 1205–1212. doi.org
 
@@ -26,4 +26,3 @@ Artículo 1: Bases de datos vectoriales e Inteligencia Artificial
 **Relación con la Unidad Temática I:** Se relaciona con las arquitecturas de los Sistemas de Gestión de Bases de Datos (SGBD) y la consistencia de los datos, redefiniendo las fronteras tradicionales entre el almacenamiento orientado a la eficiencia transaccional y el procesamiento analítico.
 
 **Aporte al proyecto de curso:** (Completar según tu proyecto. Ejemplo: Nos ayuda a diseñar la arquitectura del backend para procesar los pedidos de los usuarios y generar reportes financieros inmediatos en la misma plataforma sin duplicar la infraestructura).
-```
